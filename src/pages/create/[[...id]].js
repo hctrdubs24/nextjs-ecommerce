@@ -61,7 +61,7 @@ const ProductsManager = () => {
 
     files.forEach((file) => {
       if (file.size > 1024 * 1024)
-        return (err = "El tamaño de imagen más grande es de 1MB");
+        return (err = "El tamaño de imagen es más grande que 1MB");
 
       if (file.type !== "image/jpeg" && file.type !== "image/png")
         return (err =
@@ -151,7 +151,7 @@ const ProductsManager = () => {
             type="text"
             name="title"
             value={title}
-            placeholder="Title"
+            placeholder="Nombre del producto"
             className="d-block my-4 w-100 p-2"
             onChange={handleChangeInput}
           />
@@ -175,7 +175,7 @@ const ProductsManager = () => {
                 type="number"
                 name="inStock"
                 value={inStock}
-                placeholder="inStock"
+                placeholder="En almacén"
                 className="d-block w-100 p-2"
                 onChange={handleChangeInput}
               />
@@ -187,7 +187,7 @@ const ProductsManager = () => {
             id="description"
             cols="30"
             rows="4"
-            placeholder="Description"
+            placeholder="Descripción"
             onChange={handleChangeInput}
             className="d-block my-4 w-100 p-2"
             value={description}
@@ -198,7 +198,7 @@ const ProductsManager = () => {
             id="content"
             cols="30"
             rows="6"
-            placeholder="Content"
+            placeholder="Contenido"
             onChange={handleChangeInput}
             className="d-block my-4 w-100 p-2"
             value={content}
@@ -222,7 +222,7 @@ const ProductsManager = () => {
           </div>
 
           <button type="submit" className="btn btn-info my-2 px-4">
-            {onEdit ? "Update" : "Create"}
+            {onEdit ? "Actualizar" : "Registrar"}
           </button>
         </div>
 

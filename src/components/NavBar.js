@@ -131,8 +131,8 @@ function NavBar() {
                 <li className="nav-item">
                   <Link href="/signin">
                     <a className={"nav-link" + isActive("/signin")}>
-                      <i className="fas fa-user" aria-hidden="true"></i> 
-                       Ingresar
+                      <i className="fas fa-user" aria-hidden="true"></i>
+                      Ingresar
                     </a>
                   </Link>
                 </li>

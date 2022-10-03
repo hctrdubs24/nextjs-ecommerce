@@ -123,7 +123,7 @@ const Cart = () => {
   return (
     <div className="row mx-auto">
       <Head>
-        <title>Cart Page</title>
+        <title>Carrito</title>
       </Head>
 
       <div className="col-md-8 text-secondary table-responsive my-3">
@@ -145,9 +145,9 @@ const Cart = () => {
 
       <div className="col-md-4 my-3 text-right text-uppercase text-secondary">
         <form>
-          <h2>Shipping</h2>
+          <h2>Comprar</h2>
 
-          <label htmlFor="address">Address</label>
+          <label htmlFor="address">Dirección</label>
           <input
             type="text"
             name="address"
@@ -157,7 +157,7 @@ const Cart = () => {
             onChange={(e) => setAddress(e.target.value)}
           />
 
-          <label htmlFor="mobile">Mobile</label>
+          <label htmlFor="mobile">Teléfono</label>
           <input
             type="text"
             name="mobile"
@@ -174,7 +174,7 @@ const Cart = () => {
 
         <Link href={auth.user ? "#!" : "/signin"}>
           <a className="btn btn-dark my-2" onClick={handlePayment}>
-            Proceed with payment
+            Método de pago
           </a>
         </Link>
       </div>
