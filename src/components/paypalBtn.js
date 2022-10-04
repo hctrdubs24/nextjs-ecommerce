@@ -3,8 +3,8 @@ import { patchData } from "../utils/fetchData";
 import { DataContext } from "../store/GlobalState";
 import { updateItem } from "../store/Actions";
 
-const paypalBtn = ({ order }) => {
-  const refPaypalBtn = useRef();
+const PaypalBtn = ({ order }) => {
+  const RefPaypalBtn = useRef();
   const { state, dispatch } = useContext(DataContext);
   const { auth, orders } = state;
 
@@ -64,10 +64,10 @@ const paypalBtn = ({ order }) => {
           });
         },
       })
-      .render(refPaypalBtn.current);
+      .render(RefPaypalBtn.current);
   }, []);
 
-  return <div ref={refPaypalBtn}></div>;
+  return <div ref={RefPaypalBtn}></div>;
 };
 
-export default paypalBtn;
+export default PaypalBtn;

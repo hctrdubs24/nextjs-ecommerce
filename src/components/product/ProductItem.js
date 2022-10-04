@@ -85,9 +85,9 @@ const ProductItem = ({ product, handleCheck }) => {
         <div className="row justify-content-between mx-0">
           <h6 className="text-danger">${product.price}</h6>
           {product.inStock > 0 ? (
-            <h6 className="text-danger">In Stock: {product.inStock}</h6>
+            <h6 className="text-danger">Disponibilidad: {product.inStock}</h6>
           ) : (
-            <h6 className="text-danger">Out Stock</h6>
+            <h6 className="text-danger">No disponible</h6>
           )}
         </div>
 
